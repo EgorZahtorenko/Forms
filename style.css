@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 80px;
+}
+.content{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+input{
+    width: 400px;
+    min-height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 3px solid lightgray;
+    font-size: 25px;
+}
+#fieldset{
+    width: 400px;
+    margin: auto;
+    text-align: justify;
+}
+#gender1, #gender2, #checkbox{
+    width: 25px;
+    height: 25px;
+    vertical-align: -30%;
+}
+#country{
+    min-width: 400px;
+    min-height: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+}
+#button{
+    margin: auto;
+    margin-top: 10px;
+    border: 3px solid deepskyblue;
+    color: deepskyblue;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px;
+    width: 100px;
+}
+span{
+    color: red;
+    font-size: 15px;
+    vertical-align: text-top;
+}
+textarea{
+    resize: vertical;
+    margin-top: 10px;
+    width: 400px;
+}
+input:focus{
+    outline: none;
+    border-bottom: 3px solid lightskyblue;
+}
+#button:hover{
+    background-color: deepskyblue;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+}
+@media all and (max-width: 800px){
+    input {
+        border: 2px solid lightgray;
+        width: 98%;
+    }
+    input:focus{
+        outline: none;
+        border: 3px solid lightskyblue;
+    }
+    #fieldset{
+        width: 98%;
+    }
+    body{
+        text-align: left;
+    }
+    .content{
+        margin-top: -50px;
+    }
+    label{
+        float: left;
+        margin: 3px;
+    }
+    select{
+        width: 98%;
+    }
+    textarea{
+        width: 98%;
+    }
+    #checkbox{
+        width: 30px;
+    }
+}
